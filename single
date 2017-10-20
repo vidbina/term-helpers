@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+function single {
+  echo "single monitor"
+  xrandr \
+    --output eDP1 --auto \
+    --output DP1 --off
+}
+
+single
