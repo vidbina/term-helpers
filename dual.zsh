@@ -2,8 +2,8 @@
 
 function dual {
   xrandr \
-    --output DP1 --above eDP1 --auto \
-    --output eDP1 --primary --auto
+    --output DP-1 --above eDP-1 --auto \
+    --output eDP-1 --primary --auto
   xmonad --restart
 }
 
