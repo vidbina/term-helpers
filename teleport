@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+# travel to the zapped location
+if [[ -a "/tmp/zap.pwd" ]] {
+  echo "🚪"
+  cd $(cat "/tmp/zap.pwd")
+}

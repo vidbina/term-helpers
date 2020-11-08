@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# splat your brains over the wall... all zapped env vars will be know here
+if [[ -a "/tmp/zap.env" ]] {
+  echo "💥"
+  cat /tmp/zap.env |
+    sed '/^_=/d' |
+    sed 's/^/export /' |
+    sed 's/=/="/' |
+    sed 's/$/"/' > /tmp/zap.env.sh
+  source /tmp/zap.env.sh
+}
