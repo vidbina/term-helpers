@@ -4,6 +4,7 @@ function zap {
   # make a snapshot of whatever matters at this moment :)
   echo "⚡️"
   rm /tmp/zap.*
+  echo $PWD | xsel -ib
   ln -s $PWD /tmp/zap.ln
   printenv > "/tmp/zap.env"
 }
